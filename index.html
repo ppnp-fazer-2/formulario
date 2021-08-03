@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="conteudo">
+           <h1>Exit ticket</h1>
+           <form id="formulario">
+               <fieldset>
+                   <legend>Seus dados</legend>
+                   <div class="row">
+                      <label for="nome">Nome completo</label>
+                      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                   </div>
+                   <div class="row">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email" placeholder="Digite seu email" required >
+                   </div>
+                   <div class="row">
+                     <label>Ocupação</label>
+                     <input type="radio" value="CLT" id="clt" name="ocupacao" required>
+                     <label for="clt">CLT</label> 
+                     <input type="radio" value="PJ" id="pj" name="ocupacao">
+                     <label for="pj">PJ</label>
+                     <input type="radio" value="Estudante" id="estudante" name="ocupacao">
+                     <label for="estudante">Estudante</label>
+                   </div>
+               </fieldset>
+               <fieldset>
+                 <legend>Avaliação do curso</legend>
+                 <div class="row">
+                    <label for="dtcurso">Data do curso</label>
+                    <input type="date" id="dtcurso" name="dtcurso">
+                 </div>
+                 <div class="row">
+                  <label>Feedback</label>
+                 </div>
+                 <div class="row">
+                    <textarea name="feedback" id="feedback" cols="40" rows="5"
+                     placeholder="Fale sobre o curso" autocomplete="off" required></textarea>
+                 </div>
+                 <div class="row">
+                    <label class="notas">Nota para o curso</label>
+                 </div>
+                 <div class="row">
+                    <input type="radio" value="1" name="nota">
+                    <label>1</label>
+                    <input type="radio" value="2" name="nota">
+                    <label>2</label>
+                    <input type="radio" value="3" name="nota">
+                    <label>3</label>
+                    <input type="radio" value="4" name="nota">
+                    <label>4</label>
+                    <input type="radio" value="5" name="nota">
+                    <label>5</label>
+                 </div>
+                 <div class="row">
+                    <label class="nivel">Quais tecnologias você ainda tem dúvidas ?</label>
+                 </div>
+                 <div class="row">
+                    <input type="checkbox" value="python" id="python" name="tecnologia">
+                    <label for="python">Python</label>
+                    <input type="checkbox" value="html" id="html" name="tecnologia">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" value="css" id="css" name="tecnologia">
+                    <label for="css">CSS</label>
+                 </div>
+               </fieldset>
+               <div class="buttons">
+                  <input type="submit">
+                  <input type="reset" value="Limpar">
+               </div>
+           </form>     
+        </div>
+    </section>
+    <section id="resultado-aluno">
+      <div class="conteudo">
+        <h2>Resultado do exit ticket</h2>
+        <fieldset>
+          <legend>Dados do aluno</legend>
+          <div id="info-aluno">
+
+          </div>
+        </fieldset>
+      </div>
+    </section>
+</body>
+</html>

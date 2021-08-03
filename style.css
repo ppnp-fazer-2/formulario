@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;  
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,69,27,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 10px;
+}
+
+h1, h2 {
+   font-size: 50px;
+   text-align: center; 
+}
+
+.row {
+    padding: 5px;
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: 20px;
+    border-color: #c2cbce;
+    box-shadow: 2px 2px 2px #c2cbce;
+}
+
+legend {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+label:not([for="clt"], [for="pj"], [for="estudante"],
+        [for="html"], [for="python"], [for="css"] ) {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    padding: 2px;
+    outline: none;
+}
+
+input[id="nome"],
+input[id="email"] {
+    width: 500px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    border: none;
+    border-bottom: 2px solid #c2cbce;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+    color: #ffa500;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-color: #ffa500;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+}
+
+textarea:focus {
+    border-color: #ffa500;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    color: white;
+    background-color: #ffa500;
+    margin: 5px;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: scale(1.2);
+}
+
+.buttons {
+    text-align: center;
+}
+
+label[for="python"],
+label[for="html"],
+label[for="css"] {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label {
+    color: white;
+    border-color: #ffa500;
+    background-color: #ffa500;
+}
+
+label[class="nivel"],
+label[class="notas"] {
+    width: 100%;
+}
+
+#resultado-aluno {
+    display: none;
+}
